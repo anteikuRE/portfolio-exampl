@@ -1,0 +1,80 @@
+@import "/src/scss/_variables";
+
+.recent {
+  padding-top: 5rem;
+  background: $RecentPost;
+  .recent-headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    h1 {
+      font-weight: 400;
+      font-size: 22px;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      color: $Secondary;
+    }
+  }
+  .posts__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 8%;
+  }
+  .post {
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    margin: 2% 2%;
+    padding: 40px;
+    background: #fff;
+    &:hover {
+      box-shadow: 0px 4px 15px rgba(187, 225, 250, 0.85);
+    }
+  }
+}
+.post-date {
+  display: flex;
+  margin: 1rem 0;
+  img {
+    margin: 0 3rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .recent {
+    .posts__wrapper {
+      margin: 1% 3%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .recent {
+    .posts__wrapper {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 8%;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .recent {
+    .recent-headers {
+      justify-content: center;
+      a {
+        display: none;
+      }
+    }
+    .post {
+      padding: 20px;
+    }
+  }
+  .post-date {
+    img {
+      margin: 0 1rem;
+    }
+  }
+}

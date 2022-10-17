@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "name": "author",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

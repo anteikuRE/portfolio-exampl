@@ -1,0 +1,54 @@
+@import "/src/scss/_variables";
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 140px 10%;
+  margin-top: 140px;
+  img {
+    box-shadow: -8px 8px 0 1px hsla(194, 57%, 95%, 1);
+    border-radius: 100%;
+  }
+  .hero__text {
+    max-width: 50%;
+    h1 {
+      font-weight: 700;
+      font-size: 44px;
+      margin: 2rem 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      margin: 2rem 0;
+    }
+    button {
+      cursor: pointer;
+      width: 200px;
+      height: 45px;
+      border: none;
+      background: $Primary;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 920px) {
+  .hero {
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 100px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .hero {
+    flex-direction: column-reverse;
+    .hero__text {
+      text-align: center;
+      max-width: unset;
+    }
+  }
+}

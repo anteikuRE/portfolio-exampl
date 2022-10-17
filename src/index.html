@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John portfolio</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+    <script defer src="js/burger.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar hidden">
+      <a class="nav-text" href="pages/work.html" target="_blank">Works</a>
+      <a class="nav-text" href="pages/blog.html" target="_blank">Blog</a>
+      <a class="nav-text" href="pages/contacts.html" target="_blank">Contact</a>
+      <div class="burger__wrapper">
+        <ul class="burger">
+          <li class="burger__line"></li>
+          <li class="burger__line"></li>
+          <li class="burger__line"></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero hidden">
+      <div class="hero__text">
+        <h1>Hi, I am John, Creative Technologist</h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <button>Download Resume</button>
+      </div>
+      <img src="img/hero_portrait.png" alt="" />
+    </section>
+    <section class="recent hidden">
+      <div class="recent-headers">
+        <h1>Recent posts</h1>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="posts__wrapper">
+        <div class="post">
+          <h1>Making a design system from scratch</h1>
+          <div class="post-date">
+            <span>12 Feb 2020</span>
+            <img src="/src/img/Vector 1.svg" alt="" />
+            <span>Design, Pattern</span>
+          </div>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="post">
+          <h1>Creating pixel perfect icons in Figma</h1>
+          <div class="post-date">
+            <span>12 Feb 2020</span>
+            <img src="/src/img/Vector 1.svg" alt="" />
+            <span>Figma, Icon Design</span>
+          </div>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="featured__works hidden">
+      <h1>Featured works</h1>
+      <div class="work">
+        <img src="img/first_work.jpg" alt="" />
+        <div class="work__text">
+          <h1>Designing Dashboards</h1>
+          <span>
+            <div class="work__year">2020</div>
+            <div class="work__tag">Dashboard</div>
+          </span>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/second_work.jpg" alt="" />
+        <div class="work__text">
+          <h1>Vibrant Portraits of 2020</h1>
+          <span>
+            <div class="work__year">2018</div>
+            <div class="work__tag">Illustration</div>
+          </span>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="hidden">
+      <div class="icons">
+        <a href="">
+          <img src="img/fb.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="img/insta.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="img/twitter.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="img/Linkedin.svg" alt="" />
+        </a>
+      </div>
+      <span>Copyright ©2020 All rights reserved </span>
+    </footer>
+  </body>
+</html>

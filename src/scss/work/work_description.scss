@@ -1,0 +1,39 @@
+.arrow-back {
+  width: 45px;
+
+  transform: rotateZ(-45deg);
+}
+
+.work__description__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 6% 32%;
+  .work__text {
+    .work__year {
+      background-color: #ff7c7c;
+    }
+  }
+  img {
+    margin: 2rem 0;
+  }
+
+  h2,
+  h3 {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .work__description__wrapper {
+    margin: 6% 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work__description__wrapper {
+    margin: 6% 10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .work__description__wrapper {
+    margin: 6% 5%;
+  }
+}
